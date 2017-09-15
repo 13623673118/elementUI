@@ -1,17 +1,22 @@
 <template>
   <div class="index">
     {{msg}}
+    <Date></Date>
     <div class="cube"></div>
   </div>
 </template>
 
 <script>
+  import Date from './template/date'
   export default {
     name: 'index',
     data() {
       return {
         msg: 'hello,world'
       }
+    },
+    components:{
+      Date
     }
   }
 </script>
